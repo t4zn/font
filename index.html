@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taizun CSS Import</title>
+    <link href="https://taizun.site/taizun.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1 class="hero-title">
+            <div class="hero-line"><strong>Taizun</strong> Font</div>
+            <div class="hero-line">Crafted with Precision</div>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="switchTab('html', event)">
+                <i class="devicon-html5-plain"></i>
+                html
+            </button>
+            <button class="nav-tab" onclick="switchTab('css', event)">
+                <i class="devicon-css3-plain"></i>
+                css
+            </button>
+            <button class="nav-tab" onclick="switchTab('react', event)">
+                <i class="devicon-react-original"></i>
+                react
+            </button>
+            <button class="nav-tab" onclick="switchTab('next', event)">
+                <i class="devicon-nextjs-line"></i>
+                next
+            </button>
+            <button class="nav-tab" onclick="switchTab('vanilla', event)">
+                <i class="devicon-javascript-plain"></i>
+                vanilla
+            </button>
+            <button class="nav-tab" onclick="switchTab('python', event)">
+                <i class="devicon-python-plain"></i>
+                python
+            </button>
+        </div>
+
+        <div class="content">
+            <div id="html-content" class="tab-content active">
+                <div class="title">HTML Import</div>
+                <div class="description">Add this link tag to your HTML head section to import Taizun CSS:</div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('html-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="html-code" class="code-text">&lt;link href="https://taizun.site/taizun.css" rel="stylesheet"&gt;</div>
+                </div>
+            </div>
+
+            <div id="css-content" class="tab-content">
+                <div class="title">CSS Import</div>
+                <div class="description">Add this import statement at the top of your CSS file to import Taizun CSS:
+                </div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('css-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="css-code" class="code-text">@import url('https://taizun.site/taizun.css');</div>
+                </div>
+            </div>
+
+            <div id="react-content" class="tab-content">
+                <div class="title">React Import</div>
+                <div class="description">Add this import statement to your React component to import Taizun CSS:</div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('react-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="react-code" class="code-text">import "https://taizun.site/taizun.css";</div>
+                </div>
+            </div>
+
+            <div id="next-content" class="tab-content">
+                <div class="title">Next.js Import</div>
+                <div class="description">Add this Head component to your Next.js page to import Taizun CSS:</div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('next-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="next-code" class="code-text">&lt;Head&gt;&lt;link rel="stylesheet" href="https://taizun.site/taizun.css" /&gt;&lt;/Head&gt;</div>
+                </div>
+            </div>
+
+            <div id="vanilla-content" class="tab-content">
+                <div class="title">Vanilla JavaScript Import</div>
+                <div class="description">Add this JavaScript code to dynamically import Taizun CSS:</div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('vanilla-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="vanilla-code" class="code-text">document.head.innerHTML += '&lt;link rel="stylesheet" href="https://taizun.site/taizun.css"&gt;';</div>
+                </div>
+            </div>
+
+            <div id="python-content" class="tab-content">
+                <div class="title">Python Import</div>
+                <div class="description">Add this link tag to your Python HTML template to import Taizun CSS:</div>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyToClipboard('python-code')">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </button>
+                    <div id="python-code" class="code-text">&lt;link rel="stylesheet" href="https://taizun.site/taizun.css"&gt;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
