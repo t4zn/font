@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taizun CSS Import</title>
+    <title>Taizun Font Import</title>
     <link href="https://taizun.site/taizun.css" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="styles.css">
@@ -49,7 +49,7 @@
         <div class="content">
             <div id="html-content" class="tab-content active">
                 <div class="title">HTML Import</div>
-                <div class="description">Add this link tag to your HTML head section to import Taizun CSS:</div>
+                <div class="description">Add this link tag to your HTML head section to import Taizun Font:</div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('html-code')">
                         <svg viewBox="0 0 24 24">
@@ -57,13 +57,16 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="html-code" class="code-text">&lt;link href="https://taizun.site/taizun.css" rel="stylesheet"&gt;</div>
+                    <div id="html-code" class="code-text">&lt;<span class="keyword">link</span> <span
+                            class="keyword">href</span>="https://taizun.site/taizun.css"
+                        <span class="keyword">rel</span>="stylesheet"&gt;
+                    </div>
                 </div>
             </div>
 
             <div id="css-content" class="tab-content">
                 <div class="title">CSS Import</div>
-                <div class="description">Add this import statement at the top of your CSS file to import Taizun CSS:
+                <div class="description">Add this import statement at the top of your CSS file to import Taizun Font:
                 </div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('css-code')">
@@ -72,13 +75,15 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="css-code" class="code-text">@import url('https://taizun.site/taizun.css');</div>
+                    <div id="css-code" class="code-text"><span class="keyword">@import</span> <span
+                            class="keyword">url</span>('https://taizun.site/taizun.css');</div>
                 </div>
             </div>
 
             <div id="react-content" class="tab-content">
                 <div class="title">React Import</div>
-                <div class="description">Add this import statement to your React component to import Taizun CSS:</div>
+                <div class="description">Add this import statement to your React component to import Taizun Font:</div>
+                div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('react-code')">
                         <svg viewBox="0 0 24 24">
@@ -86,13 +91,14 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="react-code" class="code-text">import "https://taizun.site/taizun.css";</div>
+                    <div id="react-code" class="code-text"><span class="keyword">import</span>
+                        "https://taizun.site/taizun.css";</div>
                 </div>
             </div>
 
             <div id="next-content" class="tab-content">
                 <div class="title">Next.js Import</div>
-                <div class="description">Add this Head component to your Next.js page to import Taizun CSS:</div>
+                <div class="description">Add this Head component to your Next.js page to import Taizun Font:</div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('next-code')">
                         <svg viewBox="0 0 24 24">
@@ -100,13 +106,17 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="next-code" class="code-text">&lt;Head&gt;&lt;link rel="stylesheet" href="https://taizun.site/taizun.css" /&gt;&lt;/Head&gt;</div>
+                    <div id="next-code" class="code-text">&lt;<span class="keyword">Head</span>&gt;&lt;<span
+                            class="keyword">link</span> <span class="keyword">rel</span>="stylesheet"
+                        <span class="keyword">href</span>="https://taizun.site/taizun.css" /&gt;&lt;/<span
+                            class="keyword">Head</span>&gt;
+                    </div>
                 </div>
             </div>
 
             <div id="vanilla-content" class="tab-content">
                 <div class="title">Vanilla JavaScript Import</div>
-                <div class="description">Add this JavaScript code to dynamically import Taizun CSS:</div>
+                <div class="description">Add this JavaScript code to dynamically import Taizun Font:</div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('vanilla-code')">
                         <svg viewBox="0 0 24 24">
@@ -114,13 +124,17 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="vanilla-code" class="code-text">document.head.innerHTML += '&lt;link rel="stylesheet" href="https://taizun.site/taizun.css"&gt;';</div>
+                    <div id="vanilla-code" class="code-text"><span class="keyword">document</span>.<span
+                            class="keyword">head</span>.<span class="keyword">innerHTML</span> += '&lt;<span
+                            class="keyword">link</span> <span class="keyword">rel</span>="stylesheet"
+                        <span class="keyword">href</span>="https://taizun.site/taizun.css"&gt;';
+                    </div>
                 </div>
             </div>
 
             <div id="python-content" class="tab-content">
                 <div class="title">Python Import</div>
-                <div class="description">Add this link tag to your Python HTML template to import Taizun CSS:</div>
+                <div class="description">Add this link tag to your Python HTML template to import Taizun Font:</div>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyToClipboard('python-code')">
                         <svg viewBox="0 0 24 24">
@@ -128,7 +142,10 @@
                                 d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
                         </svg>
                     </button>
-                    <div id="python-code" class="code-text">&lt;link rel="stylesheet" href="https://taizun.site/taizun.css"&gt;</div>
+                    <div id="python-code" class="code-text">&lt;<span class="keyword">link</span> <span
+                            class="keyword">rel</span>="stylesheet"
+                        <span class="keyword">href</span>="https://taizun.site/taizun.css"&gt;
+                    </div>
                 </div>
             </div>
         </div>

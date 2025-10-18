@@ -114,11 +114,11 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.nav-tab.active i {
-    color: rgba(255, 255, 255, 1);
+.nav-tab.active {
+    color: #10b981;
 }
 
-.nav-tab.active {
+.nav-tab.active i {
     color: #10b981;
 }
 
@@ -159,6 +159,11 @@ body {
     padding-right: 80px;
     font-weight: 500;
     letter-spacing: 0.3px;
+}
+
+.code-text .keyword {
+    color: #10b981;
+    font-weight: 600;
 }
 
 .copy-btn {
