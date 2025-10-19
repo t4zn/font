@@ -391,20 +391,23 @@ body {
 }
 
 .font-input {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     padding: 16px;
     color: #ffffff;
     font-family: Taizun;
     font-size: 24px;
     line-height: 1.4;
-    resize: vertical;
+    resize: none;
     min-height: 120px;
     outline: none;
     transition: all 0.2s ease;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .font-input:focus {
