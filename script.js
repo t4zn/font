@@ -10,8 +10,9 @@ function switchTab(tab, event) {
     // Remove active class from all tabs and content
     document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
     
-    // Add active class to clicked tab
-    event.target.classList.add('active');
+    // Add active class to clicked tab (ensure we get the button, not the icon)
+    const clickedTab = event.target.closest('.nav-tab');
+    clickedTab.classList.add('active');
     
     // The slider is now automatically centered under each active tab via CSS
     
