@@ -340,3 +340,14 @@ body {
         font-size: 13px;
     }
 }
+
+.taizun-link {
+    color: #10b981;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.taizun-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
