@@ -163,7 +163,7 @@ body {
 
 .code-text {
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', monospace;
-    font-size: 16px;
+    font-size: 18px;
     color: #f8f8f2;
     line-height: 1.6;
     word-break: break-all;
@@ -350,4 +350,108 @@ body {
 .taizun-link:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.font-preview {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 32px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    margin-top: 40px;
+}
+
+.preview-header {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.preview-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-family: Taizun;
+}
+
+.preview-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Taizun;
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.font-input {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    color: #ffffff;
+    font-family: Taizun;
+    font-size: 24px;
+    line-height: 1.4;
+    resize: vertical;
+    min-height: 120px;
+    outline: none;
+    transition: all 0.2s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.font-input:focus {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+.font-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Taizun;
+}
+
+/* Mobile responsiveness for font preview */
+@media (max-width: 768px) {
+    .font-preview {
+        padding: 24px 20px;
+        margin-top: 30px;
+    }
+
+    .preview-title {
+        font-size: 18px;
+    }
+
+    .preview-description {
+        font-size: 13px;
+    }
+
+    .font-input {
+        font-size: 20px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .font-preview {
+        padding: 20px 16px;
+        margin-top: 20px;
+    }
+
+    .preview-title {
+        font-size: 18px;
+    }
+
+    .font-input {
+        font-size: 18px;
+        min-height: 100px;
+        padding: 12px;
+    }
 }
